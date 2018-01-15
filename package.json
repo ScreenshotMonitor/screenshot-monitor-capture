@@ -1,21 +1,25 @@
 {
   "name": "screenshot-monitor-capture",
-  "version": "0.4.0",
+  "version": "0.6.0",
   "description": "Capture a screenshot of your local machine in electron",
   "main": "dist/screenshotcapture.js",
   "typings": "dist/screenshotcapture.d.ts",
-  "devDependencies": {},
-  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^2.0.0"
+  },
+  "dependencies": {
+    "electron": "^1.7.10"
+  },
   "scripts": {
-    "build": "tsc"
-  },  
+    "postinstall":"tsc"    
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/ScreenshotMonitor/screenshot-monitor-capture.git"
-},
- "bugs": {
+  },
+  "bugs": {
     "url": "https://github.com/ScreenshotMonitor/screenshot-monitor-capture/issues"
-},
+  },
   "keywords": [
     "screenshot",
     "screengrab",
@@ -24,7 +28,7 @@
     "laptop",
     "x11"
   ],
-  "homepage":"https://github.com/ScreenshotMonitor/screenshot-monitor-capture#readme",
+  "homepage": "https://github.com/ScreenshotMonitor/screenshot-monitor-capture#readme",
   "author": "ScreenshotMonitor",
   "license": "MIT"
 }
