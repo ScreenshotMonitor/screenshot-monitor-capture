@@ -2,7 +2,7 @@
 
 ### Install
 ```
-npm install screenshot-monitor-capturee --save
+npm install screenshot-monitor-capture --save
 ```
 
 ### Usage
