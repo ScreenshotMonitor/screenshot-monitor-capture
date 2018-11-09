@@ -1,6 +1,13 @@
 import * as electron from "electron";
 
-export function takeScreenshot(imageFormat: string = "image/png"): Promise<Buffer> {
+interface Data {
+    buffer: Buffer;
+    width: number;
+    height: number;
+}
+
+
+export function takeScreenshot(imageFormat: string = "image/png"): Promise<Data> {
 
     var top: number = 0;
     var left: number = 0;
@@ -45,7 +52,7 @@ export function takeScreenshot(imageFormat: string = "image/png"): Promise<Buffe
                         if (err) {
                             reject(err);
                         } else {
-                            resolve(buffer);
+                            resolve({ buffer, width, height });
                         }
                     });
                 }, imageFormat);
