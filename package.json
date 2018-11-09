@@ -1,6 +1,6 @@
 {
   "name": "screenshot-monitor-capture",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "Capture a screenshot of your local machine in electron",
   "main": "dist/screenshotcapture.js",
   "typings": "dist/screenshotcapture.d.ts",  

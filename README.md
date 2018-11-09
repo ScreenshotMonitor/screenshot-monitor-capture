@@ -10,8 +10,8 @@ npm install screenshot-monitor-capture --save
 import { takeScreenshot } from "screenshot-monitor-capture";
 const fs = require('fs');
 
-takeScreenshot("image/png").then((buffer: Buffer) => {
-	fs.writeFile("c:\\screen.png", buffer, (error: Error) => {
+takeScreenshot("image/png").then((data: Data) => {
+	fs.writeFile("c:\\screen.png", data.buffer, (error: Error) => {
 		if (error) {
 			console.error(error);
 		}
