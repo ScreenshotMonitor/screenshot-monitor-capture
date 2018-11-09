@@ -1,6 +1,6 @@
 import * as electron from "electron";
 
-interface Data {
+export interface Data {
     buffer: Buffer;
     width: number;
     height: number;

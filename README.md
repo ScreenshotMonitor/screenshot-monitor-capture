@@ -7,7 +7,7 @@ npm install screenshot-monitor-capture --save
 
 ### Usage
 ```js
-import { takeScreenshot } from "screenshot-monitor-capture";
+import { takeScreenshot, Data } from "screenshot-monitor-capture";
 const fs = require('fs');
 
 takeScreenshot("image/png").then((data: Data) => {
